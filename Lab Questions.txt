@@ -1,0 +1,27 @@
+Question 1: What authentication scheme is used by default in Django Rest Framework's browsable API? How is this managed?
+    The default authentication scheme used in Django Rest Framework's browsable API is BasicAuthentication and SessionAuthentication.
+    It is managed by the token authentication where the username and password get exchanged to generate a secure token.
+
+Question 2: What authentication scheme is used by httpie when querying with the -a or --auth option flag?
+    Basic Authentication is used by httpie when querying with the -a or --auth option flag
+
+Question 3: What is the difference between Session Authentication and Token Authentication? How is Token Authentication an improvement over Basic Authentication?
+    Session Authentication the user state is stored in the server's memory, however in the Token Authentication the user state is stored on the client. Moreover in 
+    Token Authentication the data is encrypted into a JWT and then sent to the client, and in Session Authentication the data is stored in a cookie. 
+    Token Authentication makes verifying the username and password much easier compared to Basic Authentication, instead of verifying the data everytime 
+    the data is verified once and saved in the browser. 
+
+Question 4: Provide a high level summary of what happens during an OAuth2 authentication flow. For instance: bitbucket.org > Log In > Log in with Google. 
+            What happens when I click "Log in with Google"?  
+            1. The program asks the user for permission to use service resources.
+            2. If permission is granted the program gets an authorization grant
+            3. The program requests an access token
+            4. If permission is granted and all the authentication is valid, the API creates a token 
+            5. The API is connected to the application
+
+
+Question 5: Please provide a link to your code.
+    https://github.com/MahmoodFalmaz/authentication-lab
+
+Resources
+1. https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
